@@ -24,8 +24,8 @@ public class UT_Catalog {
 		assertTrue("spring container should not be null", ctx != null);
 		Catalog catalog = (CatalogImpl)ctx.getBean("musicCatalog");
 		
-		for(Long i=(long) 1; i<=10; i++){
-		System.out.println("This is message using DI -- " + catalog.findById(i));
+		for(int i=1; i<=10; i++){
+		System.out.println("This is message using DI -- " + catalog.findById((long) i));
 		
 		}
 		ctx.close();

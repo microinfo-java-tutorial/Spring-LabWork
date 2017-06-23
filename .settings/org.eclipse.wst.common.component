@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Spring-LabWork">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab01.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab01.1/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab01.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab01.2/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab02.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab02.1/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab02.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab02.2/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.1-XML/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.1-XML/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.1/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.2/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.3/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab03.3/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab04.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab04.1/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab04.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab04.2/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab05.1_Optional/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab05.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab05.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab06.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab06.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.1/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.2/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.2/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.3/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.3/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.4/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab07.4/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab08.1/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab08.1/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab08.3/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab08.3/tst"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab08.4/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Lab08.4/tst"/>
+        <property name="context-root" value="Spring-LabWork"/>
+        <property name="java-output-path" value="/Spring-LabWork/Lab01.2/out/production/Lab01.2"/>
+    </wb-module>
+</project-modules>

@@ -18,9 +18,8 @@ import org.springframework.stereotype.Repository;
 import com.javatunes.domain.MusicItem;
 
 // In double imagine it is an id="itemRepository" how we used to create in applicationContext.xml file.
-//You can entier use @Component annotation or @Repository annotation
-@Repository("inItemRepository")
-public class InMemoryItemRepository implements ItemRepository {
+@Repository("outItemRepository")
+public class OutMemoryItemRepository implements ItemRepository {
 
 	// this is simply to eliminate the need to stand a database up!
 	private CatalogData catalogData = new CatalogData();

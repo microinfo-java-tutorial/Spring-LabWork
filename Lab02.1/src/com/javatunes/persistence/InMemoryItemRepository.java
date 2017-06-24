@@ -12,9 +12,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
+import javax.inject.Named;
+
 import com.javatunes.domain.MusicItem;
 
-// TODO: Declare as a bean using annotations
+@Named
 public class InMemoryItemRepository implements ItemRepository {
 
 	// this is simply to eliminate the need to stand a database up!

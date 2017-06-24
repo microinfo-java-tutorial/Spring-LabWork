@@ -10,13 +10,16 @@ package com.javatunes.service;
 
 import java.util.Collection;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
 
-// TODO: Declare as a bean with id musicCatalog
+@Named("musicCatalog")
 public class CatalogImpl implements Catalog {
 
-	// TODO: Inject the repository
+	@Inject
 	private ItemRepository itemRepository;
 
 

@@ -13,13 +13,16 @@ import java.util.Collection;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
 
-@Named("musicCatalog")
+@Component("catalog")
 public class CatalogImpl implements Catalog {
 
-	@Inject
+	@Autowired
 	private ItemRepository itemRepository;
 
 

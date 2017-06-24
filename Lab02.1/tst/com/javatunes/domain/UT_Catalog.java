@@ -31,7 +31,7 @@ public class UT_Catalog {
 	public void catalogTest() {
 		assertTrue("spring container should not be null", ctx != null);
 		
-		Catalog cat = ctx.getBean(Catalog.class);
+		Catalog cat = (Catalog) ctx.getBean("catalog");
 		assertTrue("Catalog should not be null", cat!=null);
 		
 		System.out.println(cat);

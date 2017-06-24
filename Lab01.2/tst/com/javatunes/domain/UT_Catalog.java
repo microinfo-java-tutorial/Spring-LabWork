@@ -22,12 +22,14 @@ public class UT_Catalog {
 	public void catalogTest() {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext.xml");
 		assertTrue("spring container should not be null", ctx != null);
-		Catalog catalog = (CatalogImpl)ctx.getBean("catalog");
+		Catalog catalog = (CatalogImpl)ctx.getBean("musicCatalog");
 		System.out.println("This is message using DI -- " + catalog.findById(1L));
 		/*
 		 * Look up the musicCatalog and invoke its toString method.  
 		 * Don't forget to close spring context
 		 */
+		catalog.toString();
+		ctx.close();
 		
 	}
 }

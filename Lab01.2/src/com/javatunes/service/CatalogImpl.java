@@ -20,6 +20,7 @@ public class CatalogImpl implements Catalog{
 	public void setItemRepository(ItemRepository itemRepository) {
 		this.itemRepository = itemRepository;
 	}
+	
 	public MusicItem findById(Long id) {
 		return itemRepository.get(id);
 	}

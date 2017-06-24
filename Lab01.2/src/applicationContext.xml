@@ -10,4 +10,8 @@
 		<property name="itemRepository" ref="itemRepository"/>
 	</bean>
 	
+	<bean id="musicCatalog" class="com.javatunes.service.CatalogImpl">
+		<property name="itemRepository" ref="itemRepository"/>
+	</bean>
+	
 </beans>

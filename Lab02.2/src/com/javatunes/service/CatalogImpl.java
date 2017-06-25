@@ -14,7 +14,7 @@ import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
 
 public class CatalogImpl implements Catalog {
-
+	
 	private ItemRepository itemRepository;
 
 	public void setItemRepository(ItemRepository itemRepository) {

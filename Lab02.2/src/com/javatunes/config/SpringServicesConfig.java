@@ -9,16 +9,24 @@
 package com.javatunes.config;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import com.javatunes.persistence.ItemRepository;
 import com.javatunes.service.Catalog;
 import com.javatunes.service.CatalogImpl;
 
-// TODO: Declare as a configuration class
+@Configuration
 public class SpringServicesConfig {
 	
-	// TODO: Inject the repository
-	ItemRepository repository;
+	@Autowired
+	ItemRepository itemRepository;
 
-	// TODO: Declare the catalog bean definition
-
+	@Bean
+	public Catalog catalog(){
+		CatalogImpl catalog = new CatalogImpl();
+		catalog.setItemRepository(itemRepository);
+		return catalog;
+	}
 }

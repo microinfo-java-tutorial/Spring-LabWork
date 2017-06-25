@@ -8,10 +8,13 @@
  
 package com.javatunes.config;
 
-// TODO: Declare as a Spring configuration class
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class SpringDomainConfig {
 
-	// TOOD: Declare as a bean definition
+	@Bean
 	public Integer maxSearchResults () {
 		return Math.max(1, (int) (Math.random()*10));
 	}

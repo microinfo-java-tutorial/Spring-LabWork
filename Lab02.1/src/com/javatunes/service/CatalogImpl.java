@@ -15,11 +15,12 @@ import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
 
-@Component("catalog")
+@Service("catalog")
 public class CatalogImpl implements Catalog {
 
 	@Autowired

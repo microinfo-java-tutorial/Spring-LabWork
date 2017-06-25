@@ -13,10 +13,12 @@ import java.util.ArrayList;
 
 import javax.inject.Named;
 
+import org.springframework.stereotype.Component;
+
 import com.javatunes.domain.MusicCategory;
 import com.javatunes.domain.MusicItem;
 
-@Named
+@Component
 public class CatalogData extends ArrayList<MusicItem> {
 	   
 	private static final long serialVersionUID = 1L;

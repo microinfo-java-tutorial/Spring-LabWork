@@ -14,9 +14,12 @@ import java.util.Collections;
 
 import javax.inject.Named;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 import com.javatunes.domain.MusicItem;
 
-@Named
+@Repository("itemRepository")
 public class InMemoryItemRepository implements ItemRepository {
 
 	// this is simply to eliminate the need to stand a database up!

@@ -10,11 +10,16 @@ package com.javatunes.service;
 
 import java.util.Collection;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
 
+//@Service("catalog")
 public class CatalogImpl implements Catalog {
 
+	//@Autowired
 	private ItemRepository itemRepository;
 
 	public void setItemRepository(ItemRepository itemRepository) {

@@ -13,10 +13,24 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Repository;
+
 import com.javatunes.domain.MusicItem;
 
+//@Repository("itemRepository")
 public class InMemoryItemRepository implements ItemRepository {
 
+	@PostConstruct
+	public void init() {
+		System.out.println("In InMemoryItemRepository PostContruct");
+	}
+	
+	public InMemoryItemRepository() {
+		System.out.println("In InMemoryItemRepository Constructor");
+	}
+	
 	private List<MusicItem> catalogData = new CatalogData();
 
 	private Integer maxSearchResults = 5;

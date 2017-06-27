@@ -28,6 +28,8 @@ public class HibernateItemRepository implements ItemRepository {
 
 	public MusicItem get(Long id) {
 		// Call EntityManager.find() and return the result
+		
+		// Think SessionFactory as Connection in JDBC and currentSEssion as Statement in JDBC
 		Session s = getSessionFactory().getCurrentSession();
 		s.beginTransaction();
 		MusicItem ret = (MusicItem)s.get(MusicItem.class, id);

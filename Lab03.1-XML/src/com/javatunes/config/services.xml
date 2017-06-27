@@ -7,8 +7,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-	<bean id="musicCatalog" class="com.javatunes.service.CatalogImpl">
-
+	<bean id="itemRepository bean " class="com.javatunes.service.CatalogImpl">
+    
 	    <!-- TODO: Add a constructor argument that injects the itemRepository bean (declared in repository.xml) -->
 
 	</bean>

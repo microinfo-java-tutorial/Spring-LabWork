@@ -8,7 +8,12 @@
  
 package com.javatunes.config;
 
-// TODO: Declare as a Spring configuration class
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration 
+@Import({SpringDomainConfig.class,SpringRepositoryConfig.class, SpringServicesConfig.class})
 // TODO: Import other config classes
+
 
 public class SpringConfig {}

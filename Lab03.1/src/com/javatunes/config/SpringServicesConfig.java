@@ -8,6 +8,7 @@
  
 package com.javatunes.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,17 +21,17 @@ import com.javatunes.service.CatalogImpl;
 public class SpringServicesConfig {
 	
 	// TODO: Inject the repository
-	ItemRepository repository;
+	@Autowired
+	ItemRepository itemRepository;
 
 	// Declare the catalog bean definition
+	
 	@Bean
-	public Catalog catalog() {
-
-		// TODO: Create the CatalogImpl, passing in the repository
-		CatalogImpl catalog = null;
-		
+	 public Catalog catalog(){
+		CatalogImpl catalog = new CatalogImpl();
+		catalog.setItemRepository(itemRepository);
 		return catalog;
 	}
 
-
+	
 }

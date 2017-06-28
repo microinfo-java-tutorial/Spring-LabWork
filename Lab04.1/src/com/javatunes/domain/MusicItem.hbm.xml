@@ -16,12 +16,12 @@
         <property name="releaseDate" type="date" column="ReleaseDate"/>
         <property name="price" type="big_decimal" column="Price"/>
         
-		<!--<property name="musicCategory" column="MusicCategory">
+		<property name="musicCategory" column="MusicCategory">
 			<type name="org.hibernate.type.EnumType">
 				<param name="enumClass">com.javatunes.domain.MusicCategory</param>
-				  <param name="useNamed">true</param> 
+				<!--  <param name="useNamed">true</param> -->
 			</type>
-		</property>      -->  
+		</property>      
 
     </class>
     

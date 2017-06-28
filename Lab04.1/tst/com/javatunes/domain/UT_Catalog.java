@@ -21,9 +21,11 @@ public class UT_Catalog {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
 
 		Catalog cat = ctx.getBean(Catalog.class);
+		 MusicItem musicItem = cat.findById(1L);
+		 
 		
 		System.out.println("\n*** Retrieving item from the database ***");
-		System.out.println(cat.findById(1L));
+		System.out.println(musicItem);
 		System.out.println("***\n");
 
 		ctx.close();

@@ -18,7 +18,7 @@
 		  <property name="password" value="${jdbc.password}"/>
 	</bean>
 	
-	<bean id="javatunesSessionFactory" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<bean id="javatunesSessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="javatunesDataSource"/>
 
 		<property name="mappingResources">

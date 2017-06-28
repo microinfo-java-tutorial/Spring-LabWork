@@ -9,6 +9,7 @@
 package com.javatunes.persistence;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -39,10 +40,14 @@ public class HibernateItemRepository implements ItemRepository {
 
 	@Override
 	public Collection<MusicItem> getAll() {
-		// Not implemented
-		return null;
+
+		Session s = getSessionFactory().getCurrentSession();
+		s.beginTransaction();
+		List<MusicItem> musicItemsList = s.createCriteria(MusicItem.class).list();
+		return musicItemsList;
 	}
 
+	//TODO: Try to do
 	@Override
 	public Collection<MusicItem> searchByArtistTitle(String keyword) {
 		// Not implemented

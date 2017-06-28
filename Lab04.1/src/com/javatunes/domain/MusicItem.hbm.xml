@@ -17,12 +17,14 @@
         <property name="releaseDate" type="date" column="ReleaseDate"/>
         <property name="price" type="big_decimal" column="Price"/>
         
-<!-- 		<property name="musicCategory" column="MusicCategory">
+		<property name="musicCategory" column="MusicCategory">
 			<type name="org.hibernate.type.EnumType">
 				<param name="enumClass">com.javatunes.domain.MusicCategory</param>
-				<param name="useNamed">true</param>
+				<!-- If you enable below param "useNamed", then it indicates as STRING value and
+								 your database column bust be of type VARCHAR(). -->
+				<!-- <param name="useNamed">true</param> -->
 			</type>
-		</property>  -->       
+		</property>       
 
     </class>
     

@@ -9,6 +9,7 @@
 package com.javatunes.service;
 
 import java.util.Collection;
+import java.util.List;
 
 import com.javatunes.domain.MusicItem;
 
@@ -16,5 +17,7 @@ public interface Catalog {
 
    public MusicItem findById(Long id);
    public Collection<MusicItem> findByKeyword(String keyword);
+   public List<MusicItem> getAllMusicItems();
    public int size();
+   
 }

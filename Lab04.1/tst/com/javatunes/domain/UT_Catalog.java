@@ -8,6 +8,8 @@
 
 package com.javatunes.domain;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -20,13 +22,20 @@ public class UT_Catalog {
 	public void catalogTest() {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
 
-		Catalog cat = ctx.getBean(Catalog.class);
+		Catalog cat = (Catalog) ctx.getBean("catalog");
 		
 		MusicItem musicItem = cat.findById(1L);
 		
 		System.out.println("\n*** Retrieving item from the database ***");
 		System.out.println(musicItem);
 		System.out.println("***\n");
+		
+		System.out.println("All Music Items: -------------------------------------------------------");
+		List<MusicItem> musicItemsList = cat.getAllMusicItems();
+		
+		for(MusicItem  musicitem: musicItemsList) {
+			System.out.println("ArtistName: " + musicitem.getTitle());
+		}
 		
 		ctx.close();
 	}

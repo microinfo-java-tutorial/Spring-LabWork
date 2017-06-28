@@ -9,5 +9,14 @@
 package com.javatunes.domain;
 
 public enum MusicCategory {
-	Blues,Classical,Jazz,Rap,Country, Pop, Alternative, Rock, Classic_Rock
+	
+	Blues,		// 0
+	Classical,	// 1
+	Jazz,		// 2
+	Rap,		// 3
+	Country, 	// 4
+	Pop, 		// 5
+	Alternative, 	// 6
+	Rock, 		// 7
+	Classic_Rock	// 8
 }

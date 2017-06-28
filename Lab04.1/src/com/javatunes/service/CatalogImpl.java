@@ -9,6 +9,7 @@
 package com.javatunes.service;
 
 import java.util.Collection;
+import java.util.List;
 
 import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
@@ -21,14 +22,27 @@ public class CatalogImpl implements Catalog {
 		this.itemRepository=itemRepository;
 	}
 
+	@Override
 	public MusicItem findById(Long id) {
+		
 		return itemRepository.get(id);
 	}
-
+	
+	@Override
 	public Collection<MusicItem> findByKeyword(String keyword) {
 		return itemRepository.searchByArtistTitle(keyword);
 	}
 
+	@Override
+	public List<MusicItem> getAllMusicItems() {
+
+		List<MusicItem> musicItemsList = (List<MusicItem>) itemRepository.getAll();
+		
+		// TODO: Sort this list of musicItems in ascending order based on "artist"
+		
+		return musicItemsList;
+	}
+	
 	@Override
 	public int size() {
 		return itemRepository.size();
@@ -38,5 +52,6 @@ public class CatalogImpl implements Catalog {
 	public String toString() {
 		return "I am a shiny new " + getClass().getName() + " brought to you from Spring" + " but you can just call me " + getClass().getInterfaces()[0] + ".  My itemRepository is " + itemRepository;
 	}
+
 
 }

@@ -14,10 +14,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.support.ConversionServiceFactoryBean;
 import org.springframework.core.convert.ConversionService;
 
-// Declare as a Spring configuration class
-// and import other configuration classes
 @Configuration
-// TODO: Add property source to read the properties file
 @Import({SpringRepositoryConfig.class, SpringServicesConfig.class})  // Include Optional SpringDomainConfig
 public class SpringConfig {
 	

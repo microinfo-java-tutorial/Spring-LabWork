@@ -47,7 +47,7 @@ public class HibernateItemRepository implements ItemRepository {
 		// Not implemented
 		Session s = getSessionFactory().getCurrentSession();
 		s.beginTransaction();
-		List<MusicItem> musicItemsList = s.createQuery("from MusicItem").list();
+		List<MusicItem> musicItemsList = s.createCriteria(MusicItem.class).list();
 		
 		return musicItemsList;
 	}

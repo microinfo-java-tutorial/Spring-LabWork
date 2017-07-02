@@ -9,12 +9,9 @@
 package com.javatunes.service;
 
 import java.util.Collection;
-
-import javax.inject.Inject;
-import javax.inject.Named;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.javatunes.domain.MusicItem;
@@ -25,7 +22,17 @@ public class CatalogImpl implements Catalog {
 
 	@Autowired
 	private ItemRepository itemRepository;
-
+	
+	 public CatalogImpl() {
+	        throw new NullPointerException();
+	    }
+	 
+	 public List<MusicItem> getAllMusicItems(){
+		 
+		 List<MusicItem> musicItemsList = (List<MusicItem>) itemRepository.getAll();
+		 
+		 return musicItemsList;
+	 }
 
 	public void setItemRepository(ItemRepository itemRepository) {
 		this.itemRepository = itemRepository;

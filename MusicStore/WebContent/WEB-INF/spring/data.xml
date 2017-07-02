@@ -11,7 +11,7 @@
 <!-- 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
     	<property name="locations" value="classpath:jdbc.properties"/>
 	</bean> -->
-	<context:property-placeholder location="jdbc.properties"/>
+	<context:property-placeholder location="classpath:/jdbc.properties"/>
 	
 	<bean id="javatunesDataSource" 
 	      class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -27,7 +27,7 @@
 
 		<property name="mappingResources">
 			<list>
-			  <value>com/javatunes/domain/MusicItem.hbm.xml</value>
+			  <value>com/microInfo/musicStore/domain/MusicItem.hbm.xml</value>
 			  <!-- <value>com/javatunes/domain/User.hbm.xml</value> -->
 			</list>
 		</property>

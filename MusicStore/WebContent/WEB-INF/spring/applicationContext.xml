@@ -14,8 +14,10 @@
 	<import resource="data.xml"/>
 
 	<!-- START: Below three tags are mandetory -->
-	<context:component-scan base-package="com.microInfo" />
-	<mvc:annotation-driven />
+	<context:component-scan base-package="com.microInfo.musicStore" />
+	
+	<mvc:annotation-driven/>
+	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/</value>

@@ -119,5 +119,6 @@ public class MusicItem {
 				+ artist + ", releaseDate=" + releaseDate + ", price=" + price
 				+ ", musicCategory=" + musicCategory + "]";
 	}
+	
 
 }

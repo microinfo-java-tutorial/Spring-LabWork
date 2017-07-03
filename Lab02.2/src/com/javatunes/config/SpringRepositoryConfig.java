@@ -8,12 +8,16 @@
  
 package com.javatunes.config;
 
+<<<<<<< HEAD
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+>>>>>>> bdca71b2cc17d7a8f21cd8cfa06ab1235ca112f1
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.javatunes.persistence.InMemoryItemRepository;
-import com.javatunes.persistence.ItemRepository;
 
+<<<<<<< HEAD
 // TODO: Declare as a configuration class
 @Configuration
 public class SpringRepositoryConfig {
@@ -28,3 +32,25 @@ public class SpringRepositoryConfig {
 	}
 	
 }
+=======
+import com.javatunes.persistence.ItemRepository;
+
+
+	@Configuration
+	public class SpringRepositoryConfig {
+		
+		@Autowired
+		private int maxSearchResults;
+		
+		@Bean
+		public ItemRepository itemRepository(){
+			
+			InMemoryItemRepository itemRepository = new InMemoryItemRepository();
+			
+			itemRepository.setMaxSearchResults(maxSearchResults);
+			
+			return itemRepository;
+	
+}
+	}
+>>>>>>> bdca71b2cc17d7a8f21cd8cfa06ab1235ca112f1

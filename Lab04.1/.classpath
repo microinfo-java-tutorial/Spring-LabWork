@@ -4,5 +4,9 @@
 	<classpathentry kind="src" path="tst"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="lib" path="C:/Users/Sowji/Downloads/mysql-connector-java-5.1.42/mysql-connector-java-5.1.42/mysql-connector-java-5.1.42-bin.jar"/>
+>>>>>>> bdca71b2cc17d7a8f21cd8cfa06ab1235ca112f1
 	<classpathentry kind="output" path="bin"/>
 </classpath>

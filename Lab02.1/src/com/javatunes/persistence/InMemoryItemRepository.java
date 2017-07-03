@@ -12,14 +12,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
+import javax.inject.Named;
 
 import com.javatunes.domain.MusicItem;
 
-// In double imagine it is an id="itemRepository" how we used to create in applicationContext.xml file.
-//You can entier use @Component annotation or @Repository annotation
-@Repository("inItemRepository")
+@Named
 public class InMemoryItemRepository implements ItemRepository {
 
 	// this is simply to eliminate the need to stand a database up!

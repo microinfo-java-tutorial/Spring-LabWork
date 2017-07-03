@@ -17,10 +17,7 @@ public class CatalogImpl implements Catalog {
 
 	private ItemRepository itemRepository;
 	
-	public CatalogImpl(ItemRepository itemRepository) {
-		this.itemRepository = itemRepository;
-	}
-
+	
 	public void setItemRepository(ItemRepository itemRepository) {
 		this.itemRepository = itemRepository;
 	}

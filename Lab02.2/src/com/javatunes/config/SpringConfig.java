@@ -8,6 +8,7 @@
  
 package com.javatunes.config;
 
+<<<<<<< HEAD
 import java.math.BigDecimal;
 import java.util.Calendar;
 
@@ -87,3 +88,14 @@ public class SpringConfig {
 	
 	
 }
+=======
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration 
+@Import({SpringDomainConfig.class,SpringRepositoryConfig.class, SpringServicesConfig.class})
+// TODO: Import other config classes
+
+
+public class SpringConfig {}
+>>>>>>> bdca71b2cc17d7a8f21cd8cfa06ab1235ca112f1

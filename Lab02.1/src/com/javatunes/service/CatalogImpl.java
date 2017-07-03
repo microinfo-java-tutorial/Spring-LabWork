@@ -10,28 +10,28 @@ package com.javatunes.service;
 
 import java.util.Collection;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import com.javatunes.domain.MusicItem;
 import com.javatunes.persistence.ItemRepository;
 
-// YOu can entier use @Component annotation or @SErvice annotation
-@Service("catalog")
+@Named("musicCatalog ")
 public class CatalogImpl implements Catalog {
 
-	@Autowired
-	@Qualifier("inItemRepository")
+	@Inject
 	private ItemRepository itemRepository;
+
+
+	public void setItemRepository(ItemRepository itemRepository) {
+		this.itemRepository = itemRepository;
+	}
 
 	public MusicItem findById(Long id) {
 		return itemRepository.get(id);
 	}
 
 	public Collection<MusicItem> findByKeyword(String keyword) {
-		
 		return itemRepository.searchByArtistTitle(keyword);
 	}
 

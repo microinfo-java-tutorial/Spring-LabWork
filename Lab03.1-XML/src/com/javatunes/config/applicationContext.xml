@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
   <!-- TODO: Add a property placeholder to read the properties file -->
-	
+	<import resource="com.javatunes"/> 
   <!--  TODO: Import the other configuration files -->
 	
   <!--  We configure a conversion service for illustration only -->

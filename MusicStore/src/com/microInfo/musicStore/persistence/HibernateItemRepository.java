@@ -13,6 +13,7 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
@@ -40,7 +41,11 @@ public class HibernateItemRepository implements ItemRepository {
 		Session s = getSessionFactory().getCurrentSession();
 		s.beginTransaction();
 		MusicItem ret = (MusicItem)s.get(MusicItem.class, id);
-		s.getTransaction().commit();
+		Transaction tx = s.getTransaction();
+		tx.commit();
+		
+		s.close();
+		
 		return ret;
 	}
 

@@ -21,8 +21,12 @@
 		
 		<spring:bind path="title">
 			<label class="col-sm-2 control-label">Title</label>
-			<form:input path="title" id="title" placeholder="Enter Album Title here" />
-			<form:errors path="title" />
+			<form:input path="title" id="title" placeholder="" />
+			<span style="color: red">
+			<form:errors path="title" class="control-label" />
+			
+			</span>
+			
 		</spring:bind>
 		<br>
 		<spring:bind path="artist">

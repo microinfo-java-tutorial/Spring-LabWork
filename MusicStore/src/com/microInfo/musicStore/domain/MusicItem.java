@@ -13,9 +13,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.sun.istack.internal.NotNull;
+
 public class MusicItem {
 
+	@NotNull
 	private Long id;
+	
 	private String title;
 	private String artist;
 	private Date releaseDate;
